@@ -34,15 +34,18 @@ rooturl: "https://archives.albany.edu"
 twitter_username: jekyllrb
 github_username:  jekyll
 
+search_enabled: true
+
 # Build settings
 #theme: minima
 #theme: jekyll-theme-gitbook
-remote_theme: sighingnow/jekyll-gitbook
+#remote_theme: sighingnow/jekyll-gitbook
+remote_theme: just-the-docs/just-the-docs
 plugins:
   #- jekyll-feed
   #- jekyll-paginate
   - jekyll-seo-tag
-  - jekyll-sitemap
+  #- jekyll-sitemap
   - jekyll-include-cache
   - jekyll-remote-theme
   #- jekyll-last-modified-at
@@ -54,8 +57,7 @@ title: "DadoCM"
 # Table of contents
 toc:
     enabled: true
-    h_min: 1
-    h_max: 3
+
 
 # for creating new empty arrays
 emptyArray: []
