@@ -1,6 +1,5 @@
 ---
-layout: page
-title: DadoCM
+layout: home
 ---
 
 # Delivering Archives and Digital Objects: a Conceptual Model (DadoCM)
@@ -14,7 +13,7 @@ Elizabeth Russey Roke
 Gregory Wiedeman  
 Jennifer Palmentiero  
 Maureen Cresci Callahan  
-María a. Matienzo  
+maría a. matienzo  
 Mark Wolfe  
 Meghan Slaff  
 Nikolas Lamarre  

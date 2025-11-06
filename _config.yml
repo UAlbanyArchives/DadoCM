@@ -35,14 +35,27 @@ twitter_username: jekyllrb
 github_username:  jekyll
 
 # Build settings
-theme: minima
+#theme: minima
+#theme: jekyll-theme-gitbook
+remote_theme: sighingnow/jekyll-gitbook
 plugins:
   #- jekyll-feed
   #- jekyll-paginate
+  - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-include-cache
+  - jekyll-remote-theme
   #- jekyll-last-modified-at
   #- jekyll/tagging
   # There are no links to tags for posts so I removed this for now
+
+title: "DadoCM"
+
+# Table of contents
+toc:
+    enabled: true
+    h_min: 1
+    h_max: 3
 
 # for creating new empty arrays
 emptyArray: []
