@@ -1,0 +1,18 @@
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  console.log("start");
+  // Select all links inside the sidebar nav
+  const navLinks = document.querySelectorAll(".site-nav a.nav-list-link");
+  console.log("check");
+  navLinks.forEach(link => {
+    link.addEventListener("click", function() {
+      // Find the menu toggle button
+      const menuButton = document.querySelector(".site-button.btn-reset.nav-open");
+      if (menuButton) {
+        console.log("check12");
+        menuButton.classList.remove("nav-open");
+      }
+    });
+  });
+});
+</script>

@@ -1,0 +1,11 @@
+/* Make sidebar sticky on mobile */
+@media (max-width: 768px) {
+  .side-bar {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  .site-footer {
+    display: none;
+  }
+}

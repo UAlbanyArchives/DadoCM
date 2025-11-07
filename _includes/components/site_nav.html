@@ -1,0 +1,51 @@
+{%- comment -%}
+  Include as: {%- include_cached components/site_nav.html all=bool -%}
+  Depends on: site.
+  Results in: cached HTML for the main navigation when `all` is nil or false;
+    includes links to pages excluded from the main navigation when `all` is true.
+  Includes:
+    components/nav/pages.html
+  Overwrites:
+    pages_top_size, collections_size, collection_entry,
+    collection_key, collection_value, collection.
+{%- endcomment -%}
+
+<nav aria-label="Main" id="site-nav" class="site-nav">
+
+
+  <ul class="nav-list">
+    {% for item in page.toc %}
+      <li class="nav-list-item">
+        {% if item.children and item.children.size > 0 %}
+          <button class="nav-list-expander btn-reset"
+                  aria-label="toggle items in {{ item.title }} category"
+                  aria-pressed="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <use xlink:href="#svg-arrow-right"></use>
+            </svg>
+          </button>
+        {% endif %}
+        <a href="#{{ item.anchor }}" class="nav-list-link">{{ item.title }}</a>
+
+        {% if item.children and item.children.size > 0 %}
+          <ul class="nav-list">
+            {% for child in item.children %}
+              <li class="nav-list-item nav-sub-item">
+                <a href="#{{ child.anchor }}" class="nav-list-link">{{ child.title }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+
+
+
+</nav>
+
+{% if site.nav_error_report %}
+{{ nav_error_report }}
+{%- endif %}
+
+{%- include custom-scripts.html -%}

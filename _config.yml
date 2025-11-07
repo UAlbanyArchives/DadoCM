@@ -48,16 +48,17 @@ plugins:
   #- jekyll-sitemap
   - jekyll-include-cache
   - jekyll-remote-theme
+  - jekyll-toc
   #- jekyll-last-modified-at
   #- jekyll/tagging
   # There are no links to tags for posts so I removed this for now
 
 title: "DadoCM"
 
-# Table of contents
+heading_anchors: true
 toc:
-    enabled: true
-
+  min_level: 2
+  max_level: 4
 
 # for creating new empty arrays
 emptyArray: []
