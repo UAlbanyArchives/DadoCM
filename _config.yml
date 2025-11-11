@@ -36,7 +36,8 @@ rooturl: "https://dadocm.github.io/"
 
 search_enabled: true
 enable_copy_code_button: true
-#relative_urls: true
+color_scheme: dado
+theme_mode: auto
 
 # Build settings
 #theme: minima

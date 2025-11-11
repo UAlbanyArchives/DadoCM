@@ -1,0 +1,61 @@
+@import "./color_schemes/dark";
+
+// main colors for buttons
+$base-button-color: $accent !default;
+$btn-primary-color: $accent !default;
+$purple-100: $accent !default;
+$blue-000: $secondary !default;
+$green-100: $secondary !default;
+
+$white: $text-color !default;
+
+// Logo colors
+$dark-brown: #B97A57;      // accent / headings
+$darker-brown: #8F5A3E;    // headings / emphasis
+$light-brown: #EFE4B0;     // not used for backgrounds
+$warm-beige: #D6BA8C;      // borders, subtle accents
+$soft-olive: #A0B57A;      // accent highlights
+$deep-teal: #4A7C74;       // buttons / links
+$rich-burgundy: #7C3E4A;   // alerts / highlights
+
+// Dark mode base
+$body-bg: #1e1e1e;           // main page background
+$body-color: #EFE4B0;        // main text (light cream for contrast)
+$primary: #D6BA8C;           // headings (beige / gold)
+$secondary: #B97A57;         // secondary headings / emphasis
+
+// Links and accents
+$link-color: #76A69A;        // slightly brighter teal for contrast
+$accent: #76A69A;            // buttons, call-to-action
+
+// Borders, code blocks, callouts
+$border-color: #8F5A3E;
+$code-bg: #2a2a2a;           // slightly lighter than $body-bg for code blocks
+$callout-bg: #2c2c2c;        // callouts / highlights
+$callout-border-color: $warm-beige;
+
+// Override btn-primary
+.btn-primary {
+  color: #FFF8E0 !important;                 // lighter cream
+  background-color: #8F5A3E !important;      // darker brown
+  background-image: linear-gradient(#8F5A3E, darken(#8F5A3E, 5%)) !important;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.25),
+              0 4px 10px rgba(0,0,0,0.12) !important;
+  border: none !important;
+}
+
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary.zeroclipboard-is-hover,
+.btn-primary.zeroclipboard-is-active {
+  background-color: darken(#8F5A3E, 8%) !important;
+  background-image: linear-gradient(darken(#8F5A3E,3%), darken(#8F5A3E,10%)) !important;
+  color: #FFF8E0 !important;
+}
+
+.btn-primary:focus {
+  outline: none !important;
+  box-shadow: 0 0 0 3px rgba(#B97A57, 0.25) !important; // secondary text color
+}
+
+

@@ -11,5 +11,29 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+  const toggleBtn = document.getElementById("theme-toggle");
+  let currentTheme = localStorage.getItem("jtd-theme") || "dado";
+
+  function updateTheme(theme) {
+    jtd.setTheme(theme);
+    localStorage.setItem("jtd-theme", theme);
+    currentTheme = theme;
+
+    if (theme === "dado") {
+      toggleBtn.textContent = "Dark mode 🌜";
+    } else {
+      toggleBtn.textContent = "Light mode 🌞";
+    }
+  }
+
+  updateTheme(currentTheme);
+
+  toggleBtn.addEventListener("click", function() {
+    const nextTheme = currentTheme === "dado" ? "dado-dark" : "dado";
+    updateTheme(nextTheme);
+  });
+});
 </script>
 {% endraw %}

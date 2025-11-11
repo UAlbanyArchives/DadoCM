@@ -1,0 +1,50 @@
+$dark-brown: #B97A57;        // primary text
+$darker-brown: #8F5A3E;      // headings
+$light-brown: #EFE4B0;       // cards, secondary backgrounds
+$lighter-cream: #FFF8E0;     // main page background
+$warm-beige: #D6BA8C;        // borders
+
+// Accessible accents
+$accent: #1E4D48;             // links, buttons (dark teal)
+$link-color: #1E4D48;         // links
+$soft-olive: #6C7A4A;         // subtle accent, highlights
+$rich-burgundy: #7C3E4A;      // alerts, highlights
+
+// Theme variables
+$body-color: $dark-brown;
+$body-bg: $lighter-cream;
+$primary: $darker-brown;
+$secondary: $dark-brown;
+$border-color: $warm-beige;
+$code-bg: #F7EAC9;  // slightly darker than $lighter-cream
+
+.site-footer {
+	color: $darker-brown !important;
+}
+
+// Override btn-primary with your brown theme
+.btn-primary {
+  color: $white !important;             // button text
+  background-color: $primary !important; // dark brown
+  background-image: linear-gradient($primary, darken($primary, 5%)) !important;
+  box-shadow: 
+    0 1px 3px rgba(0, 0, 0, 0.25), 
+    0 4px 10px rgba(0, 0, 0, 0.12) !important;
+  border: none !important;
+}
+
+// Hover and active states
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary.zeroclipboard-is-hover,
+.btn-primary.zeroclipboard-is-active {
+  background-color: darken($primary, 8%) !important;
+  background-image: linear-gradient(darken($primary, 3%), darken($primary, 10%)) !important;
+  color: $white !important;
+}
+
+// Focus state
+.btn-primary:focus {
+  outline: none !important;
+  box-shadow: 0 0 0 3px rgba($secondary, 0.25) !important;
+}
