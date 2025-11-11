@@ -415,9 +415,23 @@ Beyond description, DadoCM fosters systems interoperability, making a single uni
 
 #### EAD2002 example encoding
 
-| \<c03 level="item"\> \<did\>  \<unittitle\>Return J. Meigs correspondence with Henry Dearborn\</unittitle\>  \<unitdate normal="1803-01-17"\>1803 January 17\</unitdate\>   \<accessrestrict type="human"\>      \<p\>TThis material is unrestricted.\</p\>   \</accessrestrict\>   \<accessrestrict type="machine"\>      \<p\>https://www.wikidata.org/wiki/Q232932\</p\>   \</accessrestrict\>  \<dao href="https://digital-collections.library.utc.edu/iiif/2/p16877coll7:0/manifest.json" role="http://purl.org/dc/dcmitype/Collection"\>   \<daodesc\>    \<note type="action"\>embed\</note\>   \</daodesc\>  \</dao\> \</did\>\</c03\> |
-| :---- |
-|  |
+	<c03 level="item">
+	 <did>
+	  <unittitle>Return J. Meigs correspondence with Henry Dearborn</unittitle>
+	  <unitdate normal="1803-01-17">1803 January 17</unitdate>
+	  <accessrestrict type="human">
+		 <p>This material is unrestricted.</p>
+	  </accessrestrict>
+	  <accessrestrict type="machine">
+		 <p>https://www.wikidata.org/wiki/Q232932</p>
+	  </accessrestrict>
+	  <dao href="https://digital-collections.library.utc.edu/iiif/2/p16877coll7:0/manifest.json" role="http://purl.org/dc/dcmitype/Collection">
+	   <daodesc>
+		<note type="action">embed</note>
+	   </daodesc>
+	  </dao>
+	 </did>
+	</c03>
 
 ***Limitations of this encoding:** Descriptive metadata can only be rendered with a \<list type=”deflist”\>*
 
@@ -438,8 +452,23 @@ Beyond description, DadoCM fosters systems interoperability, making a single uni
 
 #### EAD2002 example encoding
 
-| \<c03 level="item"\> \<did\>  \<unittitle\>Spanish-American War: 23rd Separate Company Photo Album\</unittitle\>  \<unitdate type="inclusive" normal="1889/1890"\>1889-1890\</unitdate\>   \<accessrestrict type="human"\>      \<p\>This material is unrestricted.\</p\>   \</accessrestrict\>   \<accessrestrict type="machine"\>      \<p\>https://www.wikidata.org/wiki/Q232932\</p\>   \</accessrestrict\>   \<dao href="https://nyheritage.contentdm.oclc.org/digital/collection/haal/id/3603/rec/1" role="http://purl.org/dc/dcmitype/StillImage"\>    \<daodesc\>     \<note type="action"\>link\</note\>    \</daodesc\>   \</dao\> \</did\>\</c03\> |
-| :---- |
+	<c03 level="item">
+	 <did>
+	  <unittitle>Spanish-American War: 23rd Separate Company Photo Album</unittitle>
+	  <unitdate type="inclusive" normal="1889/1890">1889-1890</unitdate>
+	  <accessrestrict type="human">
+		 <p>This material is unrestricted.</p>
+	  </accessrestrict>
+	  <accessrestrict type="machine">
+		 <p>https://www.wikidata.org/wiki/Q232932</p>
+	  </accessrestrict>
+	   <dao href="https://nyheritage.contentdm.oclc.org/digital/collection/haal/id/3603/rec/1" role="http://purl.org/dc/dcmitype/StillImage">
+		<daodesc>
+		 <note type="action">link</note>
+		</daodesc>
+	   </dao>
+	 </did>
+	</c03>
 
 ***Limitations of this encoding:** Descriptive metadata can only be rendered with a \<list type=”deflist”\>*
 
@@ -461,9 +490,23 @@ Beyond description, DadoCM fosters systems interoperability, making a single uni
 
 #### EAD2002 example encoding
 
-| \<c03 level="item"\> \<did\>  \<unittitle\>Catalog and Promotional Artwork\</unittitle\>  \<unitdate normal="2019"\>2019\</unitdate\>   \<accessrestrict type="human"\>      \<p\>This material is open to members of the university community. A University login is required for public access until January 2030.\</p\>   \</accessrestrict\>   \<accessrestrict type="machine"\>      \<p\>http://iiif.io/api/auth/1/login\</p\>   \</accessrestrict\>  \<dao href="https://my.repository.edu/iiif/3/mss299/3242/manifest.json" role="application/ld+json; profile='http://iiif.io/api/presentation/3/context.json'"\>   \<daodesc\>    \<note type="action"\>embed\</note\>   \</daodesc\>  \</dao\> \</did\>\</c03\> |
-| :---- |
-|  |
+	<c03 level="item">
+	 <did>
+	  <unittitle>Catalog and Promotional Artwork</unittitle>
+	  <unitdate normal="2019">2019</unitdate>
+	  <accessrestrict type="human">
+		 <p>This material is open to members of the university community. A University login is required for public access until January 2030.</p>
+	  </accessrestrict>
+	  <accessrestrict type="machine">
+		 <p>http://iiif.io/api/auth/1/login</p>
+	  </accessrestrict>
+	  <dao href="https://my.repository.edu/iiif/3/mss299/3242/manifest.json" role="application/ld+json; profile='http://iiif.io/api/presentation/3/context.json'">
+	   <daodesc>
+		<note type="action">embed</note>
+	   </daodesc>
+	  </dao>
+	 </did>
+	</c03>
 
 #### ArchivesSpace example encoding
 
@@ -471,8 +514,26 @@ Beyond description, DadoCM fosters systems interoperability, making a single uni
 
 ***![An ArchivesSpace screenshot showing a structured Conditions Governing Access note. This uses the Label for the URI and uses the restriction end date and the text subnote for human readable description.][image8]***
 
-| {	"jsonmodel\_type": "note\_multipart",	"persistent\_id": "ba11fffc862a9771aafbe7627f35f2ed",	"label": "http://iiif.io/api/auth/1/login",	"type": "accessrestrict",	"rights\_restriction": {    	"end": "2030-01-01",    	"local\_access\_restriction\_type": \[        	"RestrictedSpecColl"    	\]	},	"subnotes": \[    	{        	"jsonmodel\_type": "note\_text",        	"content": "This material is open to members of the university community. A University login is required for public access until January 2030.",        	"publish": true    	}	\],	"publish": true} |
-| :---- |
+	{
+		"jsonmodel_type": "note_multipart",
+		"persistent_id": "ba11fffc862a9771aafbe7627f35f2ed",
+		"label": "http://iiif.io/api/auth/1/login",
+		"type": "accessrestrict",
+		"rights_restriction": {
+			"end": "2030-01-01",
+			"local_access_restriction_type": [
+				"RestrictedSpecColl"
+			]
+		},
+		"subnotes": [
+			{
+				"jsonmodel_type": "note_text",
+				"content": "This material is open to members of the university community. A University login is required for public access until January 2030.",
+				"publish": true
+			}
+		],
+		"publish": true
+	}
 
 ***Limitations of this implementation:** Title and Identifier are required, leading to duplicate data. The title duplicates the title of the archival object and the identifier duplicates the file version File URI. This also sues the XLink Show Attribute for the action and the File Format Version for the type, both of which are insufficient. Also, while ArchiveSpace does support structured Conditions Governing Access notes, it allow allows Conditions Governing Access notes to be applied to digital object records and these cannot be structured which may cause confusion. The Label field also is the best place to store a machine-readable URI which may not be sufficient.*
 
@@ -482,9 +543,9 @@ This is a [generic version of a spreadsheet](https://docs.google.com/spreadsheet
 
 This implementation includes a set of additional fields for each archival component:
 
-* dao\_link  
-* dao\_title  
-* link\_coverage  
+* dao_link  
+* dao_title  
+* link_coverage  
 * action  
 * type
 
@@ -507,8 +568,23 @@ An archival access system would be able to use this record and a hosted WARC or 
 
 #### EAD2002 example encoding
 
-| \<c03 level="item"\> \<did\>  \<unittitle\>50th Anniversary collection (University of California, Irvine)\</unittitle\>  \<unitdate type="inclusive" normal="2014/2004"\>2014-2004\</unitdate\>   \<accessrestrict type="human"\>      \<p\>This material is unrestricted.\</p\>   \</accessrestrict\>   \<accessrestrict type="machine"\>      \<p\>https://www.wikidata.org/wiki/Q232932\</p\>   \</accessrestrict\>   \<dao href="https://my.webarchiveshost.org/crawl/3603" role="application/warc"\>    \<daodesc\>     \<note type="action"\>embed\</note\>    \</daodesc\>   \</dao\> \</did\>\</c03\> |
-| :---- |
+	<c03 level="item">
+	 <did>
+	  <unittitle>50th Anniversary collection (University of California, Irvine)</unittitle>
+	  <unitdate type="inclusive" normal="2014/2004">2014-2004</unitdate>
+	  <accessrestrict type="human">
+		 <p>This material is unrestricted.</p>
+	  </accessrestrict>
+	  <accessrestrict type="machine">
+		 <p>https://www.wikidata.org/wiki/Q232932</p>
+	  </accessrestrict>
+	   <dao href="https://my.webarchiveshost.org/crawl/3603" role="application/warc">
+		<daodesc>
+		 <note type="action">embed</note>
+		</daodesc>
+	   </dao>
+	 </did>
+	</c03>
 
 ***Limitations of this encoding:** Descriptive metadata can only be rendered with a \<list type=”deflist”\>*
 
@@ -520,8 +596,15 @@ This implementation interprets how to best employ DadoCM locally. It names the r
 
 Additionally, in this example we have legacy digital object level descriptive metadata. While these records are no longer being created, we would like to send these fields to ArcLight for display and faceting. These open label and value pairs will be stored in IIIF manifests, but also duplicated here for technical reasons.
 
-| *class* DigitalObject(models.Base): 	identifier \= fields.StringField(required=True) 	label \= fields.StringField() 	action \= fields.StringField(required=True) 	type \= fields.StringField(required=True) 	access\_condition \= fields.StringField(required=True) 	thumbnail\_href \= fields.StringField() 	rights\_statement \= fields.StringField() 	metadata \= fields.ListField(dict) |
-| :---- |
+	class DigitalObject(models.Base):
+		identifier = fields.StringField(required=True)
+		label = fields.StringField()
+		action = fields.StringField(required=True)
+		type = fields.StringField(required=True)
+		access_condition = fields.StringField(required=True)
+		thumbnail_href = fields.StringField()
+		rights_statement = fields.StringField()
+		metadata = fields.ListField(dict)
 
 #### description\_harvester digital object model validation
 
@@ -550,14 +633,28 @@ Additionally, in this example we have legacy digital object level descriptive me
 
 ##### Valid digital object record
 
-| identifier: "a03b44df60b3506876a8b95720017246" action: "embed" type: "[http://purl.org/dc/dcmitype/Collection](http://purl.org/dc/dcmitype/Collection)" thumbnail\_href: "[https://media.archives.albany.edu/ua598/](https://media.archives.albany.edu/ua598/a03b44df60b3506876a8b95720017246/thumbnail.jpg)a03b44df60b[/thumbnail.jpg](https://media.archives.albany.edu/ua598/a03b44df60b3506876a8b95720017246/thumbnail.jpg)" access\_condition: "open" metadata:     \- dado\_title: "Students study in Hawley Library"     \- dado\_legacy\_id: "ks65hk04p"     \- dado\_subject: \["Buildings, Downtown Campus", "Buildings, Hawley Hall"\]  |
-| :---- |
+	identifier: "a03b44df60b3506876a8b95720017246"
+	action: "embed"
+	type: "http://purl.org/dc/dcmitype/Collection"
+	thumbnail_href: "https://media.archives.albany.edu/ua598/a03b44df60b/thumbnail.jpg"
+	access_condition: "open"
+	metadata:
+		- dado_title: "Students study in Hawley Library"
+		- dado_legacy_id: "ks65hk04p"
+		- dado_subject: ["Buildings, Downtown Campus", "Buildings, Hawley Hall"] 
 
 ##### Invalid digital object record
 
-| identifier: "e61a187694b4a4ee1941cc7c62328d6a" action: "link" type: "[http://purl.org/dc/dcmitype/StillImage](http://purl.org/dc/dcmitype/StillImage)" thumbnail\_href: "https://media.archives.albany.edu/apap199/e61a187694b/thumbnail.jpg" access\_condition: "open" metadata:     \- dado\_title: "University at Albany's Downtown campus"     \- dado\_legacy\_id: "np193w49q"     \- dado\_subject: "Buildings, Downtown Campus" \# ❌ Must be a list     \- dado\_invalid\_field: "Value" \# ❌ Not an allowed metadata field |
-| :---- |
-
+	identifier: "e61a187694b4a4ee1941cc7c62328d6a"
+	action: "link"
+	type: "http://purl.org/dc/dcmitype/StillImage"
+	thumbnail_href: "https://media.archives.albany.edu/apap199/e61a187694b/thumbnail.jpg" access_condition: "open"
+	metadata:
+		- dado_title: "University at Albany's Downtown campus"
+		- dado_legacy_id: "np193w49q"
+		- dado_subject: "Buildings, Downtown Campus" # ❌ Must be a list
+		- dado_invalid_field: "Value" # ❌ Not an allowed metadata field
+	
 ### Linking out to a webpage or search results page
 
 While archivists should consider managing their digital objects with IIIF when feasible, there are many use cases where the most immediate path to serving users is linking to a web page or search results page. This approach can be consistent with DadoCM’s recommendations if the link is made at the point when the materials are self-describing. DadoCM provides guidance on how to employ these links so that an access system can differentiate between embedded and linked digital objects.
@@ -573,8 +670,24 @@ While archivists should consider managing their digital objects with IIIF when f
 
 #### EAD2002 example encoding
 
-| \<c02 level="file"\> \<did\>  \<unittitle\>Estate and Legal Papers\</unittitle\>   \<unitdate type="inclusive" normal="1756"\>1756\</unitdate\>  \<unitdate type="inclusive" normal="1790/1877"\>1790-1877\</unitdate\>   \<accessrestrict type="human"\>      \<p\>This material is unrestricted.\</p\>   \</accessrestrict\>   \<accessrestrict type="machine"\>      \<p\>https://www.wikidata.org/wiki/Q232932\</p\>   \</accessrestrict\>   \<dao href="https://nyheritage.contentdm.oclc.org/digital/collection/p16694coll153/search/searchterm/MSS%20028.000.001/order/dateor/ad/asc" role="https://purl.org/dc/dcmitype/InteractiveResource"\>    \<daodesc\>     \<note type="action"\>link\</note\>    \</daodesc\>   \</dao\> \</did\>\</c02\> |
-| :---- |
+	<c02 level="file">
+	 <did>
+	  <unittitle>Estate and Legal Papers</unittitle>
+	  <unitdate type="inclusive" normal="1756">1756</unitdate>
+	  <unitdate type="inclusive" normal="1790/1877">1790-1877</unitdate>
+	  <accessrestrict type="human">
+		 <p>This material is unrestricted.</p>
+	  </accessrestrict>
+	  <accessrestrict type="machine">
+		 <p>https://www.wikidata.org/wiki/Q232932</p>
+	  </accessrestrict>
+	   <dao href="https://nyheritage.contentdm.oclc.org/digital/collection/p16694coll153/search/searchterm/MSS%20028.000.001/order/dateor/ad/asc" role="https://purl.org/dc/dcmitype/InteractiveResource">
+		<daodesc>
+		 <note type="action">link</note>
+		</daodesc>
+	   </dao>
+	 </did>
+	</c02>
 
 [^1]:  Coup, Betts (2021) "The Value of a Note: A Finding Aid Usability Study," *Journal of Contemporary Archival Studies*: Vol. 8, Article  https://elischolar.library.yale.edu/jcas/vol8/iss1/13
 

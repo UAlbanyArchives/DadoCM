@@ -9,3 +9,37 @@
     display: none;
   }
 }
+
+/* Increase heading sizes for all screens */
+h1, .text-alpha {
+  font-size: 38px !important; /* was 32/36 */
+}
+
+h2, .text-beta {
+  font-size: 28px !important; /* was 18/24 */
+}
+
+h3, .text-gamma {
+  font-size: 24px !important; /* was 16/18 */
+}
+
+h4, .text-delta {
+  font-size: 18px !important; /* was 14/16 */
+}
+
+h5, .text-epsilon {
+  font-size: 20px !important; /* was 16/18 */
+}
+
+h6, .text-zeta {
+  font-size: 26px !important; /* was 18/24 */
+}
+
+
+/* Accessibility/readability fixes */
+p {
+  color: #000;
+}
+.site-footer {
+  color: #000;
+}

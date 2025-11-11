@@ -35,6 +35,7 @@ rooturl: "https://dadocm.github.io/"
 #github_username:  jekyll
 
 search_enabled: true
+enable_copy_code_button: true
 #relative_urls: true
 
 # Build settings
